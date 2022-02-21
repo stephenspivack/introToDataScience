@@ -107,8 +107,6 @@ plt.plot([xLuminance,xLuminance],[prediction,yPerformance],color='red') # Residu
 baseline = np.ones(len(xLuminance))
 designMatrix = np.column_stack([xLuminance,baseline])
 betas = np.dot(np.linalg.inv(np.dot(np.transpose(designMatrix),designMatrix)),np.dot(np.transpose(designMatrix),yPerformance.reshape(len(yPerformance),1)))
-# We should get a vector of 2 betas out of this
-# Note on np.linalg.pinv: computes the pseudo-inverse of a matrix, which is the matrix that solves the least-squares problem
 
 #%% Let's plot the new regression line on top of the old figure
 
