@@ -1,4 +1,4 @@
-# Descriptive Stats
+# Descriptive Statistics
 # Code by Pascal Wallisch and Stephen Spivack
 # Date: 02-21-22
 
